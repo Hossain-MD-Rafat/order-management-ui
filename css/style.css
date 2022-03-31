@@ -1,0 +1,29 @@
+.content-area {
+  width: 80%;
+  margin: 0 auto;
+}
+.fa-shopping-bag{
+    font-size: 25px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.horizontal-center {
+  margin: 0 auto;
+}
+.logo {
+  width: 35%;
+}
+.nav-menu {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu li{
+    list-style: none;
+}
+.nav-menu li a{
+    text-decoration: none;
+}
