@@ -1,9 +1,0 @@
-$fonthead: 'Montserrat', sans-serif;
-$fontstack: 'Raleway', sans-serif;
-$colordefault: #111;
-
-@mixin transition($second) {
-  -webkit-transition: all $second ease-in-out;
-    -moz-transition: all $second ease-in-out;
-        transition: all $second ease-in-out;
-}

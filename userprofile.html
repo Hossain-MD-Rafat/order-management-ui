@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>User Profile</title>
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="content-area nav">
+        <div class="logo">
+          <img class="w-50" src="images/bbabae logo.png" alt="" />
+        </div>
+
+        <ul class="nav-menu">
+          <li>
+            <input type="text" placeholder="search" class="menu-search" />
+          </li>
+          <li><a href="">Login</a></li>
+          <li><a href="">Help</a></li>
+          <li>
+            <a href=""><i class="fas fa-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-nav"></div>
+    </header>
+
+    <!-- product view -->
+    <section class="cart container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="profile-nav">
+            <div
+              role="button"
+              id="purchases"
+              onclick="profileview(this)"
+              class="profile-nav-item active"
+            >
+              Purchases
+            </div>
+            <div
+              role="button"
+              id="profile"
+              onclick="profileview(this)"
+              class="profile-nav-item"
+            >
+              Profile
+            </div>
+            <div
+              role="button"
+              id="settings"
+              onclick="profileview(this)"
+              class="profile-nav-item"
+            >
+              Settings
+            </div>
+          </div>
+          <div class="mt-4 row" id="profile-content-purchases">
+            <div class="col-md-6 mb-5">
+              <div class="order-statu">Delivered</div>
+              <div class="order-date">Thurshday 2022, April</div>
+              <span>$223 <a href="">View Order</a></span>
+              <img
+                src="./images/kelly-sikkema-xp-ND7NjWaA-unsplash.jpg"
+                alt=""
+                class="w-100"
+              />
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="order-statu">Delivered</div>
+              <div class="order-date">Thurshday 2022, April</div>
+              <span>$223 <a href="">View Order</a></span>
+              <img
+                src="./images/kelly-sikkema-xp-ND7NjWaA-unsplash.jpg"
+                alt=""
+                class="w-100"
+              />
+            </div>
+            <div class="col-md-6 mb-5">
+              <div class="order-statu">Delivered</div>
+              <div class="order-date">Thurshday 2022, April</div>
+              <span>$223 <a href="">View Order</a></span>
+              <img
+                src="./images/kelly-sikkema-xp-ND7NjWaA-unsplash.jpg"
+                alt=""
+                class="w-100"
+              />
+            </div>
+          </div>
+          <div class="mt-4 row d-none" id="profile-content-profile">
+            <div class="col-md-10">
+              <a href="" class="profile-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="profile-item-heading">Rafat</span
+                    ><span class="profile-item-body">0298547</span>
+                  </div>
+                  <div><i class="fas fa-angle-right text-dark"></i></div>
+                </div>
+              </a>
+              <a href="" class="profile-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="profile-item-heading">Account</span
+                    ><span class="profile-item-body"
+                      >Email, Password, Sign out</span
+                    >
+                  </div>
+                  <div><i class="fas fa-angle-right text-dark"></i></div>
+                </div>
+              </a>
+              <a href="" class="profile-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="profile-item-heading">Addresses</span
+                    ><span class="profile-item-body"
+                      >Shipping and billing addresses</span
+                    >
+                  </div>
+                  <div><i class="fas fa-angle-right text-dark"></i></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="mt-4 row d-none" id="profile-content-settings">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, qui!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="container-fliud">
+      <div class="content-area">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="footer-menu">
+              <li class="footer-menu-heading">Help</li>
+              <li class="footer-menu-item">
+                <a href="">Shop at bbabae.com</a>
+              </li>
+              <li class="footer-menu-item"><a href="">Product</a></li>
+              <li class="footer-menu-item"><a href="">payment</a></li>
+              <li class="footer-menu-item"><a href="">shipping</a></li>
+              <li class="footer-menu-item">
+                <a href="">exchanges and return</a>
+              </li>
+              <li class="footer-menu-item"><a href="">my account</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="footer-menu">
+              <li class="footer-menu-heading">Help</li>
+              <li class="footer-menu-item">
+                <a href="">Shop at bbabae.com</a>
+              </li>
+              <li class="footer-menu-item"><a href="">Product</a></li>
+              <li class="footer-menu-item"><a href="">payment</a></li>
+              <li class="footer-menu-item"><a href="">shipping</a></li>
+              <li class="footer-menu-item">
+                <a href="">exchanges and return</a>
+              </li>
+              <li class="footer-menu-item"><a href="">my account</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="footer-menu">
+              <li class="footer-menu-heading">Help</li>
+              <li class="footer-menu-item">
+                <a href="">Shop at bbabae.com</a>
+              </li>
+              <li class="footer-menu-item"><a href="">Product</a></li>
+              <li class="footer-menu-item"><a href="">payment</a></li>
+              <li class="footer-menu-item"><a href="">shipping</a></li>
+              <li class="footer-menu-item">
+                <a href="">exchanges and return</a>
+              </li>
+              <li class="footer-menu-item"><a href="">my account</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="footer-menu">
+              <li class="footer-menu-heading">Help</li>
+              <li class="footer-menu-item">
+                <a href="">Shop at bbabae.com</a>
+              </li>
+              <li class="footer-menu-item"><a href="">Product</a></li>
+              <li class="footer-menu-item"><a href="">payment</a></li>
+              <li class="footer-menu-item"><a href="">shipping</a></li>
+              <li class="footer-menu-item">
+                <a href="">exchanges and return</a>
+              </li>
+              <li class="footer-menu-item"><a href="">my account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+<script>
+  function profileview(e) {
+    if (e.id === "purchases") {
+      $("#profile").removeClass("active");
+      $("#settings").removeClass("active");
+      $("#purchases").addClass("active");
+      $("#profile-content-purchases").removeClass("d-none");
+      $("#profile-content-profile").addClass("d-none");
+      $("#profile-content-settings").addClass("d-none");
+    } else if (e.id === "profile") {
+      $("#purchases").removeClass("active");
+      $("#settings").removeClass("active");
+      $("#profile").addClass("active");
+      $("#profile-content-purchases").addClass("d-none");
+      $("#profile-content-profile").removeClass("d-none");
+      $("#profile-content-settings").addClass("d-none");
+    } else {
+      $("#profile").removeClass("active");
+      $("#settings").addClass("active");
+      $("#purchases").removeClass("active");
+      $("#profile-content-purchases").addClass("d-none");
+      $("#profile-content-profile").addClass("d-none");
+      $("#profile-content-settings").removeClass("d-none");
+    }
+  }
+</script>
